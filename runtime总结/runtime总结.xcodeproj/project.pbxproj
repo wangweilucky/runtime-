@@ -16,6 +16,11 @@
 		4AB20B8C2488E96100DA6479 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20B8B2488E96100DA6479 /* main.m */; };
 		4AB20B962488E96100DA6479 /* runtime__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20B952488E96100DA6479 /* runtime__Tests.m */; };
 		4AB20BA12488E96100DA6479 /* runtime__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BA02488E96100DA6479 /* runtime__UITests.m */; };
+		4AB20BB02488EA4A00DA6479 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BAF2488EA4A00DA6479 /* Util.m */; };
+		4AB20BBB2488F17900DA6479 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BBA2488F17900DA6479 /* Person.m */; };
+		4AB20BBE2488FB1400DA6479 /* Person+WW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BBD2488FB1400DA6479 /* Person+WW.m */; };
+		4AB20BC12488FC3C00DA6479 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC02488FC3C00DA6479 /* Human.m */; };
+		4AB20BC42488FCD700DA6479 /* Human+WW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC32488FCD700DA6479 /* Human+WW.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		4AB20B9C2488E96100DA6479 /* runtime总结UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "runtime总结UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB20BA02488E96100DA6479 /* runtime__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtime__UITests.m; sourceTree = "<group>"; };
 		4AB20BA22488E96100DA6479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB20BAE2488EA4A00DA6479 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		4AB20BAF2488EA4A00DA6479 /* Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		4AB20BB92488F17900DA6479 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		4AB20BBA2488F17900DA6479 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		4AB20BBC2488FB1400DA6479 /* Person+WW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+WW.h"; sourceTree = "<group>"; };
+		4AB20BBD2488FB1400DA6479 /* Person+WW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+WW.m"; sourceTree = "<group>"; };
+		4AB20BBF2488FC3C00DA6479 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		4AB20BC02488FC3C00DA6479 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		4AB20BC22488FCD700DA6479 /* Human+WW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Human+WW.h"; sourceTree = "<group>"; };
+		4AB20BC32488FCD700DA6479 /* Human+WW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Human+WW.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		4AB20B782488E96000DA6479 /* runtime总结 */ = {
 			isa = PBXGroup;
 			children = (
+				4AB20BB82488F16B00DA6479 /* Model */,
 				4AB20B792488E96000DA6479 /* AppDelegate.h */,
 				4AB20B7A2488E96000DA6479 /* AppDelegate.m */,
 				4AB20B7C2488E96000DA6479 /* SceneDelegate.h */,
@@ -115,6 +131,8 @@
 				4AB20B872488E96100DA6479 /* LaunchScreen.storyboard */,
 				4AB20B8A2488E96100DA6479 /* Info.plist */,
 				4AB20B8B2488E96100DA6479 /* main.m */,
+				4AB20BAE2488EA4A00DA6479 /* Util.h */,
+				4AB20BAF2488EA4A00DA6479 /* Util.m */,
 			);
 			path = "runtime总结";
 			sourceTree = "<group>";
@@ -135,6 +153,21 @@
 				4AB20BA22488E96100DA6479 /* Info.plist */,
 			);
 			path = "runtime总结UITests";
+			sourceTree = "<group>";
+		};
+		4AB20BB82488F16B00DA6479 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AB20BBF2488FC3C00DA6479 /* Human.h */,
+				4AB20BC02488FC3C00DA6479 /* Human.m */,
+				4AB20BC22488FCD700DA6479 /* Human+WW.h */,
+				4AB20BC32488FCD700DA6479 /* Human+WW.m */,
+				4AB20BB92488F17900DA6479 /* Person.h */,
+				4AB20BBA2488F17900DA6479 /* Person.m */,
+				4AB20BBC2488FB1400DA6479 /* Person+WW.h */,
+				4AB20BBD2488FB1400DA6479 /* Person+WW.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB20BB02488EA4A00DA6479 /* Util.m in Sources */,
 				4AB20B812488E96000DA6479 /* ViewController.m in Sources */,
+				4AB20BBB2488F17900DA6479 /* Person.m in Sources */,
+				4AB20BC12488FC3C00DA6479 /* Human.m in Sources */,
 				4AB20B7B2488E96000DA6479 /* AppDelegate.m in Sources */,
+				4AB20BC42488FCD700DA6479 /* Human+WW.m in Sources */,
 				4AB20B8C2488E96100DA6479 /* main.m in Sources */,
 				4AB20B7E2488E96000DA6479 /* SceneDelegate.m in Sources */,
+				4AB20BBE2488FB1400DA6479 /* Person+WW.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +479,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLG2UNSU66;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "runtime总结/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +498,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLG2UNSU66;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "runtime总结/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
