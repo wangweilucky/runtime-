@@ -50,7 +50,7 @@
     return ivarArr;
 }
 
-+ (NSArray<NSString *> *)class_getClassMethod:(Class)c
++ (NSArray<NSString *> *)class_copyMethodList:(Class)c
 {
     unsigned int count = 0;
     Method *methods = class_copyMethodList(c, &count);
@@ -66,6 +66,15 @@
     }
     return methodArr;
 }
+
++ (NSArray<NSString *> *)class_copyClassMethodList:(Class)c
+{
+    const char *meteClsName = object_getClassName(c);
+    Class metaCls = objc_getMetaClass(meteClsName);
+    return [self class_copyMethodList:metaCls];
+}
+
+
 
 
 + (NSArray<NSString *> *)class_copyPropertyList_s:(Class)c {
@@ -89,15 +98,50 @@
     return ivars;
 }
 
-+ (NSArray<NSString *> *)class_getClassMethod_s:(Class)c
++ (NSArray<NSString *> *)class_copyMethodList_s:(Class)c
 {
     NSMutableArray *methods = [NSMutableArray array];
     Class cls = c;
     while (cls != [NSObject class]) {
-           [methods addObjectsFromArray:[self class_getClassMethod:cls]];
+           [methods addObjectsFromArray:[self class_copyMethodList:cls]];
            cls = class_getSuperclass(cls);
     }
     return methods;
+}
+
+
++ (NSDictionary<NSString *, NSString *> *)class_copyPropertyAttributeList:(Class)c
+{
+    unsigned int count = 0;
+    objc_property_t *propertys = class_copyPropertyList(c, &count);
+    NSMutableDictionary *propertyAttris = [NSMutableDictionary dictionaryWithCapacity:count];
+    for (int i =0; i<count; i++) {
+        objc_property_t property = propertys[i];
+        const char *name = property_getName(property);
+        const char *type = property_getAttributes(property);
+        [propertyAttris setObject:[NSString stringWithUTF8String:type] forKey:[NSString stringWithUTF8String:name]];
+    }
+    if (propertys) {
+        free(propertys);
+    }
+    return propertyAttris;
+}
+
++ (NSDictionary<NSString *, NSString *> *)class_copyIvarAttributeList:(Class)c
+{
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList(c, &count);
+    NSMutableDictionary *propertyAttris = [NSMutableDictionary dictionaryWithCapacity:count];
+    for (int i =0; i<count; i++) {
+        Ivar ivar = ivars[i];
+        const char *name = ivar_getName(ivar);
+        const char *typeEncoding = ivar_getTypeEncoding(ivar);
+        [propertyAttris setObject:[NSString stringWithUTF8String:typeEncoding] forKey:[NSString stringWithUTF8String:name]];
+    }
+    if (ivars) {
+        free(ivars);
+    }
+    return propertyAttris;
 }
 
 @end

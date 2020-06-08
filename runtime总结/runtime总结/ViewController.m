@@ -42,10 +42,24 @@
     NSArray *ivars_s = [Util class_copyIvarList_s:[self.person class]];
     NSLog(@"person ivars_s: %@", ivars_s);
     
-    // 所有方法
-    NSArray *methods = [Util class_getClassMethod:<#(nonnull Class)#>];
+    // 所有属性Attribute
+    NSDictionary *propertyAttribute = [Util class_copyPropertyAttributeList:[self.person class]];
+    NSLog(@"person propertyAttribute: %@", propertyAttribute);
+    
+    // 所有成员变量Attribute
+    NSDictionary *ivarsAttribute = [Util class_copyIvarAttributeList:[self.person class]];
+    NSLog(@"person ivarsAttribute: %@", ivarsAttribute);
+    
+    // 所有实例方法
+    NSArray *methods = [Util class_copyMethodList_s:[self.person class]];
+    NSLog(@"person methods: %@", methods);
+    
+    // 所有类方法
+    NSArray *classMethods = [Util class_copyClassMethodList:[self.person class]];
+    NSLog(@"person classMethods: %@", classMethods);
 
-    // 分类中的属性：（分类中属性是如何添加到类中的）
+    // 分类中的属性
+    
 
     // 获取类的所有方法：
 

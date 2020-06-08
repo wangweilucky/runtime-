@@ -22,6 +22,7 @@
 		4AB20BC12488FC3C00DA6479 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC02488FC3C00DA6479 /* Human.m */; };
 		4AB20BC42488FCD700DA6479 /* Human+WW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC32488FCD700DA6479 /* Human+WW.m */; };
 		4AB20BC72489E09700DA6479 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC62489E09700DA6479 /* Work.m */; };
+		4AE04439248E170C0089EAF3 /* Human+WDJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04438248E170C0089EAF3 /* Human+WDJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		4AB20BC32488FCD700DA6479 /* Human+WW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Human+WW.m"; sourceTree = "<group>"; };
 		4AB20BC52489E09700DA6479 /* Work.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
 		4AB20BC62489E09700DA6479 /* Work.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
+		4AE04437248E170C0089EAF3 /* Human+WDJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Human+WDJ.h"; sourceTree = "<group>"; };
+		4AE04438248E170C0089EAF3 /* Human+WDJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Human+WDJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				4AB20BC02488FC3C00DA6479 /* Human.m */,
 				4AB20BC22488FCD700DA6479 /* Human+WW.h */,
 				4AB20BC32488FCD700DA6479 /* Human+WW.m */,
+				4AE04437248E170C0089EAF3 /* Human+WDJ.h */,
+				4AE04438248E170C0089EAF3 /* Human+WDJ.m */,
 				4AB20BB92488F17900DA6479 /* Person.h */,
 				4AB20BBA2488F17900DA6479 /* Person.m */,
 				4AB20BBC2488FB1400DA6479 /* Person+WW.h */,
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB20BC72489E09700DA6479 /* Work.m in Sources */,
+				4AE04439248E170C0089EAF3 /* Human+WDJ.m in Sources */,
 				4AB20BB02488EA4A00DA6479 /* Util.m in Sources */,
 				4AB20B812488E96000DA6479 /* ViewController.m in Sources */,
 				4AB20BBB2488F17900DA6479 /* Person.m in Sources */,

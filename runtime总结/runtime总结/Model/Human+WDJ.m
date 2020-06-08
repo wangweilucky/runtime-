@@ -1,17 +1,17 @@
 //
-//  Human+WW.m
+//  Human+WDJ.m
 //  runtime总结
 //
-//  Created by wangwei on 6/4/20.
+//  Created by wangwei on 6/8/20.
 //  Copyright © 2020 wangwei. All rights reserved.
 //
 
-#import "Human+WW.h"
+#import "Human+WDJ.h"
 #import <objc/message.h>
 
 static void *HumanSmallName = &HumanSmallName;
 
-@implementation Human (WW)
+@implementation Human (WDJ)
 
 - (void)setSmallName:(NSString *)smallName {
     objc_setAssociatedObject(self, HumanSmallName, smallName, OBJC_ASSOCIATION_COPY);
@@ -20,17 +20,5 @@ static void *HumanSmallName = &HumanSmallName;
 - (NSString *)smallName {
     return objc_getAssociatedObject(self, HumanSmallName);
 }
-
-+ (void)jump {
-    NSLog(@"*** jump -- action");
-}
-
-- (void)eat {
-    NSLog(@"*** eat  -- action");
-}
-
-//- (void)sleep {
-//    NSLog(@"*** sleep  -- action");
-//}
 
 @end

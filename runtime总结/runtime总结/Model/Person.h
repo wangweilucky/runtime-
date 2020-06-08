@@ -22,9 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) NSString* bindId;
 
 + (void)personClassMethod;
-+ (void)persontClassMethodNoIMP;
 - (void)personInstanceMethod;
-- (void)personInstanceMethodNoImp;
 
 @end
 
