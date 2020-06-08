@@ -11,12 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : Human {
-    Person *baseFriend;
+    Person *_baseFriend;
     Person *_sexFriend;
 }
 
-@property(nonatomic, strong) Person* baseFriend;
-@property(nonatomic, strong) Person* _sexFriend;
 @property(nonatomic, copy) NSString* idType;
 @property(nonatomic, copy) NSString* idNumber;
 @property(nonatomic, copy) NSString* phoneNum;
