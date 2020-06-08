@@ -1,8 +1,8 @@
 //
-//  Human.h
+//  Work.h
 //  runtime总结
 //
-//  Created by wangwei on 6/4/20.
+//  Created by wangwei on 6/5/20.
 //  Copyright © 2020 wangwei. All rights reserved.
 //
 
@@ -10,12 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Human : NSObject {
-    int age;
-    int _sex;
-}
+@interface Work : NSObject
 
-@property(nonatomic, copy) NSString* name;
+@property(nonatomic, copy) NSString* workName;
+@property(nonatomic, assign) int type;
 
 @end
 

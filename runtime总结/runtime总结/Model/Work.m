@@ -1,14 +1,13 @@
 //
-//  Human.m
+//  Work.m
 //  runtime总结
 //
-//  Created by wangwei on 6/4/20.
+//  Created by wangwei on 6/5/20.
 //  Copyright © 2020 wangwei. All rights reserved.
 //
 
-#import "Human.h"
+#import "Work.h"
 
-
-@implementation Human
+@implementation Work
 
 @end

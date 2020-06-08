@@ -21,6 +21,7 @@
 		4AB20BBE2488FB1400DA6479 /* Person+WW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BBD2488FB1400DA6479 /* Person+WW.m */; };
 		4AB20BC12488FC3C00DA6479 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC02488FC3C00DA6479 /* Human.m */; };
 		4AB20BC42488FCD700DA6479 /* Human+WW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC32488FCD700DA6479 /* Human+WW.m */; };
+		4AB20BC72489E09700DA6479 /* Work.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20BC62489E09700DA6479 /* Work.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		4AB20BC02488FC3C00DA6479 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		4AB20BC22488FCD700DA6479 /* Human+WW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Human+WW.h"; sourceTree = "<group>"; };
 		4AB20BC32488FCD700DA6479 /* Human+WW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Human+WW.m"; sourceTree = "<group>"; };
+		4AB20BC52489E09700DA6479 /* Work.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Work.h; sourceTree = "<group>"; };
+		4AB20BC62489E09700DA6479 /* Work.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Work.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 		4AB20BB82488F16B00DA6479 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4AB20BC52489E09700DA6479 /* Work.h */,
+				4AB20BC62489E09700DA6479 /* Work.m */,
 				4AB20BBF2488FC3C00DA6479 /* Human.h */,
 				4AB20BC02488FC3C00DA6479 /* Human.m */,
 				4AB20BC22488FCD700DA6479 /* Human+WW.h */,
@@ -300,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB20BC72489E09700DA6479 /* Work.m in Sources */,
 				4AB20BB02488EA4A00DA6479 /* Util.m in Sources */,
 				4AB20B812488E96000DA6479 /* ViewController.m in Sources */,
 				4AB20BBB2488F17900DA6479 /* Person.m in Sources */,

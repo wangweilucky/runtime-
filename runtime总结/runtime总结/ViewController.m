@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "Util.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -23,12 +24,19 @@
     
     self.person = [Person new];
     
+    [self baseRuntimeOpration];
 }
 
 // runtime的基本操作
 - (void)baseRuntimeOpration {
     
+    // 获取一个类的size
+    size_t classSize = class_getInstanceSize([self.person class]);
+    NSLog(@"person class size: %zu", classSize);
+    
     // 获取所有属性
+    NSArray *ivars = [Util getIvarsWithClass:[self.person class]];
+    NSLog(@"person ivars: %@", ivars);
 
     // 分类中的属性：（分类中属性是如何添加到类中的）
 

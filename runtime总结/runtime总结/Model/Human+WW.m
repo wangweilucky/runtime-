@@ -17,6 +17,10 @@ static void *HumanSmallName = &HumanSmallName;
     objc_setAssociatedObject(self, HumanSmallName, smallName, OBJC_ASSOCIATION_COPY);
 }
 
+- (NSString *)smallName {
+    return objc_getAssociatedObject(self, HumanSmallName);
+}
+
 + (void)jump {
     NSLog(@"*** jump -- action");
 }

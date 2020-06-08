@@ -15,8 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 // runtime的基本操作：
 
 // 获取一个属性所有的属性
-+ (NSArray *)getAllAttribesWithClass:(Class)c;
-+ (NSArray *)getAllAttribesWithInstance:(id)instance;
+
++ (size_t)getSizeWithInstance:(Class)c;
+// 获取一个属性所有的属性
++ (NSArray *)getIvarsWithClass:(Class)c;
 
 
 // 获取类的所有属性：
